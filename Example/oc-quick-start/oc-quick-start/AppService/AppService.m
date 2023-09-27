@@ -46,7 +46,7 @@
 - (void)zh_translate:(NSString *)q andBlock:(void(^)(id result))block {
     NSString *url = @"https://fanyi-api.baidu.com/api/trans/vip/translate";
     NSString *appid = @"20230927001831390";
-    NSString *salt = [@[@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9"]randomObject];
+    NSString *salt = [NSString stringWithFormat:@"%d",arc4random_uniform(10000000)];
     NSString *secretKey = @"VceAhYoDKdQqOICISUza";
     NSString *sign = [[NSString stringWithFormat:@"%@%@%@%@",appid,q,salt,secretKey]md5String];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{@"appid":appid}];

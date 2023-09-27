@@ -37,7 +37,7 @@
 
 - (void)test {
     [[AppService sharedInstance]zh_translate:@"苹果" andBlock:^(id result) {
-        NSLog(@"result = %@",result);
+        NSLog(@"result = %@",result);//result = {"from":"zh","to":"en","trans_result":[{"src":"苹果","dst":"apple"}]}
     }];
 }
 
