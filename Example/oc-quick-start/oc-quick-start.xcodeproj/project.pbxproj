@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CB92AC4155600D0FBFA /* HttpService.m */; };
+		B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CBD2AC4176300D0FBFA /* AppService.m */; };
+		B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CC02AC41AEA00D0FBFA /* LYLUnicode.m */; };
 		B481D9972A569D6F0027850F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B481D9962A569D6F0027850F /* AppDelegate.m */; };
 		B481D99D2A569D6F0027850F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B481D99C2A569D6F0027850F /* ViewController.m */; };
 		B481D9A02A569D6F0027850F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B481D99E2A569D6F0027850F /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		B4340CB82AC4155600D0FBFA /* HttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
 		B4340CB92AC4155600D0FBFA /* HttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
+		B4340CBC2AC4176300D0FBFA /* AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
+		B4340CBD2AC4176300D0FBFA /* AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppService.m; sourceTree = "<group>"; };
+		B4340CC02AC41AEA00D0FBFA /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
+		B4340CC12AC41AEA00D0FBFA /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		B481D9922A569D6F0027850F /* oc-quick-start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oc-quick-start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B481D9952A569D6F0027850F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B481D9962A569D6F0027850F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,24 @@
 			path = HttpService;
 			sourceTree = "<group>";
 		};
+		B4340CBB2AC4175300D0FBFA /* AppService */ = {
+			isa = PBXGroup;
+			children = (
+				B4340CBC2AC4176300D0FBFA /* AppService.h */,
+				B4340CBD2AC4176300D0FBFA /* AppService.m */,
+			);
+			path = AppService;
+			sourceTree = "<group>";
+		};
+		B4340CBF2AC41AEA00D0FBFA /* LYLUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				B4340CC12AC41AEA00D0FBFA /* LYLUnicode.h */,
+				B4340CC02AC41AEA00D0FBFA /* LYLUnicode.m */,
+			);
+			path = LYLUnicode;
+			sourceTree = "<group>";
+		};
 		B481D9892A569D6F0027850F = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +119,8 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B4340CBF2AC41AEA00D0FBFA /* LYLUnicode */,
+				B4340CBB2AC4175300D0FBFA /* AppService */,
 				B4340CB72AC4154300D0FBFA /* HttpService */,
 				B481D9952A569D6F0027850F /* AppDelegate.h */,
 				B481D9962A569D6F0027850F /* AppDelegate.m */,
@@ -207,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B481D99D2A569D6F0027850F /* ViewController.m in Sources */,
+				B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */,
 				B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */,
 				B481D9972A569D6F0027850F /* AppDelegate.m in Sources */,
 				B481D9A82A569D740027850F /* main.m in Sources */,
+				B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,10 +6,12 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface HttpService : NSObject
 
++ (id)sharedInstance;
+
+- (void)post:(NSString *)url parameters:(NSDictionary *)parameters andBlock:(void(^)(id result))block;
+
 @end
 
-NS_ASSUME_NONNULL_END

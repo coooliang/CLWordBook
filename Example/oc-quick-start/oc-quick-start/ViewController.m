@@ -5,15 +5,7 @@
 //
 
 #import "ViewController.h"
-
-@interface User : NSObject
-
-@end
-
-@implementation User
-
-@end
-
+#import "AppService.h"
 
 @interface ViewController ()
 
@@ -44,7 +36,9 @@
 }
 
 - (void)test {
-    
+    [[AppService sharedInstance]zh_translate:@"苹果" andBlock:^(id result) {
+        NSLog(@"result = %@",result);
+    }];
 }
 
 - (void)test2 {
