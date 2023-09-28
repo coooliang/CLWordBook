@@ -44,13 +44,13 @@
 
 - (void)test {
     [SVProgressHUD show];
-    [[AppService sharedInstance]baidu_translate:@"海象" andBlock:^(id result) {
+    [[AppService sharedInstance]baidu_translate:@"Walrus" andBlock:^(id result) {
         [SVProgressHUD dismiss];
         NSLog(@"result = %@",result);//result = {"from":"zh","to":"en","trans_result":[{"src":"苹果","dst":"apple"}]}
         NSDictionary *dict = [result jsonValueDecoded];
         if(dict && [dict isKindOfClass:NSDictionary.class]){
             NSArray *trans = [dict objectForKey:@"trans_result"];
-            if(trans && [dict isKindOfClass:NSArray.class] && trans.count > 0){
+            if(trans && [trans isKindOfClass:NSArray.class] && trans.count > 0){
                 NSDictionary *rs = trans.firstObject;
                 if([rs isKindOfClass:NSDictionary.class]){
                     NSString *dst = [rs objectForKey:@"dst"];
@@ -72,11 +72,14 @@
 - (void)test2 {
     //初始化appKey(应用ID)
     YDTranslateInstance *yd = [YDTranslateInstance sharedInstance];
-    yd.appKey = @"0d867b21d5e939db";
+    yd.appKey = Urls.youdaoAppKey;
     [SVProgressHUD show];
-    [[AppService sharedInstance]youdao_translate:@"苹果" andBlock:^(YDTranslate *translate) {
+    [[AppService sharedInstance]youdao_translate:@"apple" andBlock:^(YDTranslate *translate) {
         [SVProgressHUD dismiss];
-        NSLog(@"result = %@",[translate.json modelToJSONString]);
+        NSString *phonetic = translate.phonetic;
+        NSString *translation = translate.translation.firstObject;
+        NSLog(@"phonetic = %@",phonetic);
+        NSLog(@"translation = %@",translation);
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://dict.youdao.com/dictvoice?audio=apple&type=2"]];
         NSURLSession *session = [NSURLSession sharedSession];
         NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {

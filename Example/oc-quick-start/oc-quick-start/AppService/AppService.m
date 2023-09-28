@@ -51,8 +51,8 @@
     NSString *sign = [[NSString stringWithFormat:@"%@%@%@%@",appid,q,salt,secretKey]md5String];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{@"appid":appid}];
     [parameters setObject:q forKey:@"q"];
-    [parameters setObject:@"zh" forKey:@"from"];
-    [parameters setObject:@"en" forKey:@"to"];
+    [parameters setObject:@"auto" forKey:@"from"];
+    [parameters setObject:@"auto" forKey:@"to"];
     [parameters setObject:salt forKey:@"salt"];
     [parameters setObject:sign forKey:@"sign"];
     NSLog(@"parameters = %@",parameters);

@@ -22,6 +22,9 @@
 }
 
 #pragma mark - youdao
++ (NSString *)youdaoAppKey {
+    return @"0d867b21d5e939db";
+}
 + (NSString *)youdaoVoiceAudioUrl {
     return  @"https://dict.youdao.com/dictvoice?audio=%@&type=2";
 }

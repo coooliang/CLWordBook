@@ -12,6 +12,7 @@
 + (NSString *)baiduFanYiAppId;
 + (NSString *)baiduFanYiSecretKey;
 
++ (NSString *)youdaoAppKey;
 + (NSString *)youdaoVoiceAudioUrl;
 
 @end
