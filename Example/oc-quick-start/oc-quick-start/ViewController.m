@@ -6,6 +6,7 @@
 
 #import "ViewController.h"
 #import "AppService.h"
+#import <SVProgressHUD.h>
 
 @interface ViewController ()
 
@@ -36,13 +37,19 @@
 }
 
 - (void)test {
-    [[AppService sharedInstance]zh_translate:@"苹果" andBlock:^(id result) {
+    [SVProgressHUD show];
+    [[AppService sharedInstance]baidu_translate:@"苹果" andBlock:^(id result) {
+        [SVProgressHUD dismiss];
         NSLog(@"result = %@",result);//result = {"from":"zh","to":"en","trans_result":[{"src":"苹果","dst":"apple"}]}
     }];
 }
 
 - (void)test2 {
-    
+    [SVProgressHUD show];
+    [[AppService sharedInstance]youdao_translate:@"苹果" andBlock:^(id result) {
+        [SVProgressHUD dismiss];
+        NSLog(@"result = %@",result);
+    }];
 }
 
 @end

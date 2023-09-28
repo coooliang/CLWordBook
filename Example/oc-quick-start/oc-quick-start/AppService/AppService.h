@@ -11,7 +11,9 @@
 
 + (id)sharedInstance;
 
-- (void)zh_translate:(NSString *)q andBlock:(void(^)(id result))block;
+- (void)baidu_translate:(NSString *)q andBlock:(void(^)(id result))block;
+
+- (void)youdao_translate:(NSString *)q andBlock:(void(^)(id result))block;
 
 @end
 
