@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "TranslateSDK.h"
 
 @interface AppService : NSObject
 
@@ -13,7 +13,7 @@
 
 - (void)baidu_translate:(NSString *)q andBlock:(void(^)(id result))block;
 
-- (void)youdao_translate:(NSString *)q andBlock:(void(^)(id result))block;
+- (void)youdao_translate:(NSString *)q andBlock:(void(^)(YDTranslate *translate))block;
 
 @end
 

@@ -6,6 +6,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "TranslateSDK.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:root];
     [self.window makeKeyAndVisible];
-    
-    
     return YES;
 }
 

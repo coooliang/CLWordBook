@@ -20,6 +20,13 @@
 		B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E72AC51BBF002BF973 /* libonline.a */; };
 		B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */; };
 		B4FC88EE2AC51BBF002BF973 /* libocrtrans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88EA2AC51BBF002BF973 /* libocrtrans.a */; };
+		B4FC88F22AC51E26002BF973 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88F12AC51E26002BF973 /* libz.tbd */; };
+		B4FC88F42AC51E83002BF973 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88F32AC51E83002BF973 /* AdSupport.framework */; };
+		B4FC88F62AC51E8B002BF973 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88F52AC51E8B002BF973 /* CoreTelephony.framework */; };
+		B4FC88F82AC51E92002BF973 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88F72AC51E92002BF973 /* WebKit.framework */; };
+		B4FC88FA2AC51E99002BF973 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88F92AC51E99002BF973 /* SystemConfiguration.framework */; };
+		B4FC88FC2AC51EA9002BF973 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88FB2AC51EA9002BF973 /* libsqlite3.tbd */; };
+		B4FC88FF2AC54F6C002BF973 /* Urls.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC88FE2AC54F6C002BF973 /* Urls.m */; };
 		B677B758FE7ACFB9A181CE97 /* libPods-oc-quick-start.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8740DB668A151C3D7C3E1BF /* libPods-oc-quick-start.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +54,15 @@
 		B4FC88E82AC51BBF002BF973 /* TranslateSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateSDK.h; sourceTree = "<group>"; };
 		B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeechtransonline.a; sourceTree = "<group>"; };
 		B4FC88EA2AC51BBF002BF973 /* libocrtrans.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libocrtrans.a; sourceTree = "<group>"; };
+		B4FC88EF2AC51D95002BF973 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B4FC88F12AC51E26002BF973 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B4FC88F32AC51E83002BF973 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B4FC88F52AC51E8B002BF973 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B4FC88F72AC51E92002BF973 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B4FC88F92AC51E99002BF973 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B4FC88FB2AC51EA9002BF973 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B4FC88FD2AC54F6C002BF973 /* Urls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
+		B4FC88FE2AC54F6C002BF973 /* Urls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Urls.m; sourceTree = "<group>"; };
 		C44ADE6E7577BA9576C9E2A8 /* Pods-oc-quick-start.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oc-quick-start.release.xcconfig"; path = "Target Support Files/Pods-oc-quick-start/Pods-oc-quick-start.release.xcconfig"; sourceTree = "<group>"; };
 		C8740DB668A151C3D7C3E1BF /* libPods-oc-quick-start.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oc-quick-start.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33FD155F666BA77D3870D57 /* Pods-oc-quick-start.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oc-quick-start.debug.xcconfig"; path = "Target Support Files/Pods-oc-quick-start/Pods-oc-quick-start.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FC88FC2AC51EA9002BF973 /* libsqlite3.tbd in Frameworks */,
+				B4FC88FA2AC51E99002BF973 /* SystemConfiguration.framework in Frameworks */,
+				B4FC88F82AC51E92002BF973 /* WebKit.framework in Frameworks */,
+				B4FC88F62AC51E8B002BF973 /* CoreTelephony.framework in Frameworks */,
+				B4FC88F42AC51E83002BF973 /* AdSupport.framework in Frameworks */,
+				B4FC88F22AC51E26002BF973 /* libz.tbd in Frameworks */,
 				B4FC88EB2AC51BBF002BF973 /* libbase.a in Frameworks */,
 				B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */,
 				B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */,
@@ -80,6 +102,13 @@
 		642CAE4FE1372F6BCD3F2DBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4FC88FB2AC51EA9002BF973 /* libsqlite3.tbd */,
+				B4FC88F92AC51E99002BF973 /* SystemConfiguration.framework */,
+				B4FC88F72AC51E92002BF973 /* WebKit.framework */,
+				B4FC88F52AC51E8B002BF973 /* CoreTelephony.framework */,
+				B4FC88F32AC51E83002BF973 /* AdSupport.framework */,
+				B4FC88F12AC51E26002BF973 /* libz.tbd */,
+				B4FC88EF2AC51D95002BF973 /* libc++.tbd */,
 				C8740DB668A151C3D7C3E1BF /* libPods-oc-quick-start.a */,
 			);
 			name = Frameworks;
@@ -99,6 +128,8 @@
 			children = (
 				B4340CBC2AC4176300D0FBFA /* AppService.h */,
 				B4340CBD2AC4176300D0FBFA /* AppService.m */,
+				B4FC88FD2AC54F6C002BF973 /* Urls.h */,
+				B4FC88FE2AC54F6C002BF973 /* Urls.m */,
 			);
 			path = AppService;
 			sourceTree = "<group>";
@@ -307,6 +338,7 @@
 				B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */,
 				B481D9972A569D6F0027850F /* AppDelegate.m in Sources */,
 				B481D9A82A569D740027850F /* main.m in Sources */,
+				B4FC88FF2AC54F6C002BF973 /* Urls.m in Sources */,
 				B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
