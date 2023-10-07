@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface SafeString : NSObject
+@interface QDSafeString : NSObject
 
 +(NSString *)stringSafe:(id)str;
 
@@ -18,4 +16,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END

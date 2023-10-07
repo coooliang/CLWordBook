@@ -8,8 +8,8 @@
 #define PrefixHeader_pch
 
 
-#import "SafeString.h"
+#import "QDSafeString.h"
 
-#define safeString(str) [SafeString stringSafe:str]
+#define safeString(str) [QDSafeString stringSafe:str]
 
 #endif /* PrefixHeader_pch */

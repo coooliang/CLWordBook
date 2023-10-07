@@ -6,9 +6,9 @@
 //  Copyright © 2020 China Industrial Bank. All rights reserved.
 //
 
-#import "SafeString.h"
+#import "QDSafeString.h"
 
-@implementation SafeString
+@implementation QDSafeString
 
 
 +(NSString *)stringSafe:(id)str{
