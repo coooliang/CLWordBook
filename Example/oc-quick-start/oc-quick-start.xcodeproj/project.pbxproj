@@ -16,6 +16,8 @@
 		B481D9A22A569D740027850F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B481D9A12A569D740027850F /* Assets.xcassets */; };
 		B481D9A52A569D740027850F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B481D9A32A569D740027850F /* LaunchScreen.storyboard */; };
 		B481D9A82A569D740027850F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B481D9A72A569D740027850F /* main.m */; };
+		B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3C82AD13E6F007E68F7 /* WordStore.m */; };
+		B4ADA3CE2AD14543007E68F7 /* SafeString.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3CD2AD14543007E68F7 /* SafeString.m */; };
 		B4FC88EB2AC51BBF002BF973 /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E42AC51BBF002BF973 /* libbase.a */; };
 		B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E72AC51BBF002BF973 /* libonline.a */; };
 		B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */; };
@@ -48,6 +50,10 @@
 		B481D9A62A569D740027850F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B481D9A72A569D740027850F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B49921872A79FE4F00181526 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B4ADA3C72AD13E6F007E68F7 /* WordStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordStore.h; sourceTree = "<group>"; };
+		B4ADA3C82AD13E6F007E68F7 /* WordStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordStore.m; sourceTree = "<group>"; };
+		B4ADA3CC2AD14543007E68F7 /* SafeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeString.h; sourceTree = "<group>"; };
+		B4ADA3CD2AD14543007E68F7 /* SafeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeString.m; sourceTree = "<group>"; };
 		B4FC88E42AC51BBF002BF973 /* libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbase.a; sourceTree = "<group>"; };
 		B4FC88E52AC51BBF002BF973 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		B4FC88E72AC51BBF002BF973 /* libonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonline.a; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B4ADA3CB2AD14543007E68F7 /* SafeString */,
+				B4ADA3CA2AD14250007E68F7 /* Categories */,
+				B4ADA3C62AD13E0B007E68F7 /* WordStore */,
 				B4FC88E12AC51AA1002BF973 /* Libs */,
 				B4340CBF2AC41AEA00D0FBFA /* LYLUnicode */,
 				B4340CBB2AC4175300D0FBFA /* AppService */,
@@ -180,6 +189,31 @@
 				B49921872A79FE4F00181526 /* PrefixHeader.pch */,
 			);
 			path = "oc-quick-start";
+			sourceTree = "<group>";
+		};
+		B4ADA3C62AD13E0B007E68F7 /* WordStore */ = {
+			isa = PBXGroup;
+			children = (
+				B4ADA3C72AD13E6F007E68F7 /* WordStore.h */,
+				B4ADA3C82AD13E6F007E68F7 /* WordStore.m */,
+			);
+			path = WordStore;
+			sourceTree = "<group>";
+		};
+		B4ADA3CA2AD14250007E68F7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B4ADA3CB2AD14543007E68F7 /* SafeString */ = {
+			isa = PBXGroup;
+			children = (
+				B4ADA3CC2AD14543007E68F7 /* SafeString.h */,
+				B4ADA3CD2AD14543007E68F7 /* SafeString.m */,
+			);
+			path = SafeString;
 			sourceTree = "<group>";
 		};
 		B4FC88E12AC51AA1002BF973 /* Libs */ = {
@@ -340,6 +374,8 @@
 				B481D9A82A569D740027850F /* main.m in Sources */,
 				B4FC88FF2AC54F6C002BF973 /* Urls.m in Sources */,
 				B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */,
+				B4ADA3CE2AD14543007E68F7 /* SafeString.m in Sources */,
+				B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

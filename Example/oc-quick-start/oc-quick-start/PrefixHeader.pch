@@ -7,4 +7,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+
+#import "SafeString.h"
+
+#define safeString(str) [SafeString stringSafe:str]
+
 #endif /* PrefixHeader_pch */
