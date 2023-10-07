@@ -70,20 +70,28 @@
     yd.appKey = Urls.youdaoAppKey;
     NSMutableString *result = [[NSMutableString alloc]initWithCapacity:0];
     dispatch_group_t group = dispatch_group_create();
-    for (NSString *w in cet64) {
+    [SVProgressHUD show];
+    
+    NSLog(@"cet64.count = %lu",(unsigned long)cet64.count);//8028
+    
+    for(int i=0;i<100;i++){
+        NSString *w = cet64[i];
         dispatch_group_enter(group);
-        [SVProgressHUD show];
-        [[AppService sharedInstance]youdao_translate:w andBlock:^(YDTranslate *translate) {
-            dispatch_group_leave(group);
-            [SVProgressHUD dismiss];
-            NSString *phonetic =  [self phoneticString:translate.phonetic];
-            NSString *translation = [self arrString:translate.translation];
-            NSString *str = [NSString stringWithFormat:@"%@ %@ %@",w,safeString(phonetic),translation];
-            [result appendString:@"\n"];
-            [result appendString:str];
+        NSTimeInterval interval = 1 * i;
+        [NSTimer scheduledTimerWithTimeInterval:interval repeats:false block:^(NSTimer * _Nonnull timer) {
+            [[AppService sharedInstance]youdao_translate:w andBlock:^(YDTranslate *translate) {
+                dispatch_group_leave(group);
+                NSString *phonetic =  [self phoneticString:translate.phonetic];
+                NSString *translation = [self arrString:translate.translation];
+                NSLog(@"phonetic = %@ %@ %@",w,phonetic,translation);
+                NSString *str = [NSString stringWithFormat:@"%@ %@ %@",w,safeString(phonetic),translation];
+                [result appendString:@"\n"];
+                [result appendString:str];
+            }];
         }];
     }
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
         NSLog(@"result = %@",result);
     });
 }
@@ -106,7 +114,6 @@
 
 - (NSString *)phoneticString:(NSString *)phonetic {
     NSArray *arr = [phonetic componentsSeparatedByString:@";"];
-    NSString *result = @"";
     if(arr && [arr isKindOfClass:NSArray.class] && arr.count > 0){
         return arr.firstObject;
     }
