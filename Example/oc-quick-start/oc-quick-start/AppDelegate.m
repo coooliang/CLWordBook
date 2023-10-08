@@ -15,11 +15,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     RootTabBarController *vc = [[RootTabBarController alloc]init];
-    UINavigationController *root = [[UINavigationController alloc]initWithRootViewController:vc];
-    root.navigationBarHidden = YES;
+    self.rootNavigationController = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.rootNavigationController.navigationBarHidden = YES;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:root];
+    [self.window setRootViewController:self.rootNavigationController];
     [self.window makeKeyAndVisible];
     return YES;
 }

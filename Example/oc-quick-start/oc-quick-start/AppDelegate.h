@@ -10,5 +10,7 @@
 
 @property(nonatomic,strong)UIWindow *window;
 
+@property(nonatomic,strong)UINavigationController *rootNavigationController;
+
 @end
 

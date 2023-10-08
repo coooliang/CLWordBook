@@ -10,7 +10,9 @@
 
 @end
 
-@implementation MyViewController
+@implementation MyViewController {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

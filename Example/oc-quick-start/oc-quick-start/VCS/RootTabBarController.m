@@ -43,7 +43,6 @@
                                   UIViewAutoresizingFlexibleLeftMargin |
                                   UIViewAutoresizingFlexibleRightMargin |
                                   UIViewAutoresizingFlexibleBottomMargin)];
-    [self.tabBar setFrame:CGRectMake(CGRectGetMinX(self.tabBar.frame), CGRectGetMinY(self.tabBar.frame), CGRectGetWidth(self.tabBar.frame), 63)];
     NSInteger index = 0;
     for (RDVTabBarItem *item in self.tabBar.items) {
         [item setTitle:[titles objectAtIndex:index]];

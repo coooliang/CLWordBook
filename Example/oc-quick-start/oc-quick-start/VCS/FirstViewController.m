@@ -6,6 +6,7 @@
 
 #import "FirstViewController.h"
 #import <UIColor+YYAdd.h>
+#import "RouteUtil.h"
 
 @interface FirstViewController ()<UITextFieldDelegate>
 
@@ -17,13 +18,28 @@
     UITextField *_searchTextField;
     
     UIColor *_backgroundColor;
+    
+    UITableView *_tableView;
 }
 
+#pragma mark - live cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     _backgroundColor = [UIColor colorWithHexString:@"e6e7fc"];
     self.view.backgroundColor = _backgroundColor;
     [self createTextField];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if(!_tableView) [self createTableView];
+}
+
+#pragma mark - create views
+- (void)createTableView {
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_searchBar.frame), WIDTH, HEIGHT-CGRectGetMaxY(_searchBar.frame)-[RouteUtil getRootTabBarController].tabBar.frame.size.height)];
+    _tableView.backgroundColor = UIColor.redColor;
+    [self.view addSubview:_tableView];
 }
 
 - (void)createTextField {
