@@ -18,6 +18,8 @@
 		B481D9A82A569D740027850F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B481D9A72A569D740027850F /* main.m */; };
 		B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3C82AD13E6F007E68F7 /* WordStore.m */; };
 		B4ADA3CE2AD14543007E68F7 /* QDSafeString.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3CD2AD14543007E68F7 /* QDSafeString.m */; };
+		B4E50E082AD24DB7009BEE44 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E072AD24DB7009BEE44 /* FirstViewController.m */; };
+		B4E50E0B2AD24DE2009BEE44 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */; };
 		B4FC88EB2AC51BBF002BF973 /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E42AC51BBF002BF973 /* libbase.a */; };
 		B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E72AC51BBF002BF973 /* libonline.a */; };
 		B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */; };
@@ -54,6 +56,10 @@
 		B4ADA3C82AD13E6F007E68F7 /* WordStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordStore.m; sourceTree = "<group>"; };
 		B4ADA3CC2AD14543007E68F7 /* QDSafeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSafeString.h; sourceTree = "<group>"; };
 		B4ADA3CD2AD14543007E68F7 /* QDSafeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSafeString.m; sourceTree = "<group>"; };
+		B4E50E062AD24DB7009BEE44 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B4E50E072AD24DB7009BEE44 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B4E50E092AD24DE2009BEE44 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		B4FC88E42AC51BBF002BF973 /* libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbase.a; sourceTree = "<group>"; };
 		B4FC88E52AC51BBF002BF973 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		B4FC88E72AC51BBF002BF973 /* libonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonline.a; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B4E50E052AD24D98009BEE44 /* VCS */,
 				B4ADA3CB2AD14543007E68F7 /* QDSafeString */,
 				B4ADA3CA2AD14250007E68F7 /* Categories */,
 				B4ADA3C62AD13E0B007E68F7 /* WordStore */,
@@ -214,6 +221,17 @@
 				B4ADA3CD2AD14543007E68F7 /* QDSafeString.m */,
 			);
 			path = QDSafeString;
+			sourceTree = "<group>";
+		};
+		B4E50E052AD24D98009BEE44 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				B4E50E062AD24DB7009BEE44 /* FirstViewController.h */,
+				B4E50E072AD24DB7009BEE44 /* FirstViewController.m */,
+				B4E50E092AD24DE2009BEE44 /* MyViewController.h */,
+				B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */,
+			);
+			path = VCS;
 			sourceTree = "<group>";
 		};
 		B4FC88E12AC51AA1002BF973 /* Libs */ = {
@@ -367,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E50E0B2AD24DE2009BEE44 /* MyViewController.m in Sources */,
 				B481D99D2A569D6F0027850F /* ViewController.m in Sources */,
 				B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */,
 				B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */,
@@ -374,6 +393,7 @@
 				B481D9A82A569D740027850F /* main.m in Sources */,
 				B4FC88FF2AC54F6C002BF973 /* Urls.m in Sources */,
 				B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */,
+				B4E50E082AD24DB7009BEE44 /* FirstViewController.m in Sources */,
 				B4ADA3CE2AD14543007E68F7 /* QDSafeString.m in Sources */,
 				B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */,
 			);
