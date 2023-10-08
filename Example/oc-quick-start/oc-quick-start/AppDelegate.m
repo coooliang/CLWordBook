@@ -5,12 +5,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import <RDVTabBarController.h>
-#import "FirstViewController.h"
-#import "MyViewController.h"
-
-#import "RootNavigationController.h"
+#import "RootTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +14,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    RootNavigationController *root = [[RootNavigationController alloc]init];
+    RootTabBarController *vc = [[RootTabBarController alloc]init];
+    UINavigationController *root = [[UINavigationController alloc]initWithRootViewController:vc];
+    root.navigationBarHidden = YES;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:root];

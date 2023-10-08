@@ -5,11 +5,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RDVTabBarController.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface RootNavigationController : UINavigationController
+@interface RootTabBarController : RDVTabBarController
 
 @end
 
-NS_ASSUME_NONNULL_END

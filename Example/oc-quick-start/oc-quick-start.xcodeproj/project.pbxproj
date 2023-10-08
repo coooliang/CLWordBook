@@ -21,7 +21,7 @@
 		B4E50E082AD24DB7009BEE44 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E072AD24DB7009BEE44 /* FirstViewController.m */; };
 		B4E50E0B2AD24DE2009BEE44 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */; };
 		B4E50E0E2AD2507A009BEE44 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E0D2AD2507A009BEE44 /* BaseViewController.m */; };
-		B4E50E112AD2516C009BEE44 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E102AD2516C009BEE44 /* RootNavigationController.m */; };
+		B4E50E112AD2516C009BEE44 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E102AD2516C009BEE44 /* RootTabBarController.m */; };
 		B4FC88EB2AC51BBF002BF973 /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E42AC51BBF002BF973 /* libbase.a */; };
 		B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E72AC51BBF002BF973 /* libonline.a */; };
 		B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */; };
@@ -64,8 +64,8 @@
 		B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		B4E50E0C2AD2507A009BEE44 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		B4E50E0D2AD2507A009BEE44 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		B4E50E0F2AD2516C009BEE44 /* RootNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
-		B4E50E102AD2516C009BEE44 /* RootNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		B4E50E0F2AD2516C009BEE44 /* RootTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		B4E50E102AD2516C009BEE44 /* RootTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		B4FC88E42AC51BBF002BF973 /* libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbase.a; sourceTree = "<group>"; };
 		B4FC88E52AC51BBF002BF973 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		B4FC88E72AC51BBF002BF973 /* libonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonline.a; sourceTree = "<group>"; };
@@ -238,8 +238,8 @@
 				B4E50E072AD24DB7009BEE44 /* FirstViewController.m */,
 				B4E50E092AD24DE2009BEE44 /* MyViewController.h */,
 				B4E50E0A2AD24DE2009BEE44 /* MyViewController.m */,
-				B4E50E0F2AD2516C009BEE44 /* RootNavigationController.h */,
-				B4E50E102AD2516C009BEE44 /* RootNavigationController.m */,
+				B4E50E0F2AD2516C009BEE44 /* RootTabBarController.h */,
+				B4E50E102AD2516C009BEE44 /* RootTabBarController.m */,
 			);
 			path = VCS;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 				B4FC88FF2AC54F6C002BF973 /* Urls.m in Sources */,
 				B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */,
 				B4E50E082AD24DB7009BEE44 /* FirstViewController.m in Sources */,
-				B4E50E112AD2516C009BEE44 /* RootNavigationController.m in Sources */,
+				B4E50E112AD2516C009BEE44 /* RootTabBarController.m in Sources */,
 				B4ADA3CE2AD14543007E68F7 /* QDSafeString.m in Sources */,
 				B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */,
 			);
