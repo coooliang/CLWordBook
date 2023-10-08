@@ -27,7 +27,7 @@
 }
 
 - (void)createTextField {
-    _searchBar = [[UIView alloc] initWithFrame:CGRectMake(20, STATUS_BAR_HEIGHT, WIDTH - 40, 60)];
+    _searchBar = [[UIView alloc]initWithFrame:CGRectMake(20, STATUS_BAR_HEIGHT, WIDTH - 40, 60)];
     _searchBar.backgroundColor = _backgroundColor;
     _searchBar.layer.borderColor = [UIColor colorWithHexString:@"9d9cef"].CGColor;
     _searchBar.layer.borderWidth = 2;
@@ -35,11 +35,11 @@
     _searchBar.layer.masksToBounds = YES;
     [self.view addSubview:_searchBar];
     
-    _searchIcon = [[UIImageView alloc] initWithFrame:CGRectMake(10, 8.5, 13, 13)];
-    _searchIcon.image = [UIImage imageNamed:@"search_magnifier_gray"];
+    _searchIcon = [[UIImageView alloc]initWithFrame:CGRectMake(20, 20, 20, 20)];
+    _searchIcon.image = [UIImage imageNamed:@"search"];
     [_searchBar addSubview:_searchIcon];
     
-    _searchTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_searchIcon.frame)+6, 0, _searchBar.frame.size.width-CGRectGetMaxX(_searchIcon.frame)-12, CGRectGetHeight(_searchBar.frame))];
+    _searchTextField = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_searchIcon.frame)+6, 0, _searchBar.frame.size.width-CGRectGetMaxX(_searchIcon.frame)-12, CGRectGetHeight(_searchBar.frame))];
     _searchTextField.backgroundColor = _backgroundColor;
     _searchTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     _searchTextField.font = [UIFont systemFontOfSize:14];
@@ -60,7 +60,9 @@
 }
 
 - (void)textFieldDidChange:(UITextField *)textField {
-    
+    if(textField.markedTextRange == nil){
+        NSLog(@"textField text = %@",textField.text);
+    }
 }
 
 @end

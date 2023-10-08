@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - RDVTabBarController (1.3.0)
   - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
@@ -22,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
+  - FMDB (~> 2.7.5)
   - RDVTabBarController (~> 1.3.0)
   - SVProgressHUD (~> 2.2.5)
   - YYKit (~> 1.0.9)
@@ -29,16 +33,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FMDB
     - RDVTabBarController
     - SVProgressHUD
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a5a23a10f336b149d6940fa2a177d0f31779cdfe
+PODFILE CHECKSUM: 4cb52f10c754f7bc78f6851b44377699eee485ea
 
 COCOAPODS: 1.12.1
