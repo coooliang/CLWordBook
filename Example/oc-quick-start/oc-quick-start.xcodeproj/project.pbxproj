@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B426918E2AD4EAB800FB614A /* GRE_8000_Words.csv in Resources */ = {isa = PBXBuildFile; fileRef = B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */; };
 		B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CB92AC4155600D0FBFA /* HttpService.m */; };
 		B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CBD2AC4176300D0FBFA /* AppService.m */; };
 		B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CC02AC41AEA00D0FBFA /* LYLUnicode.m */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRE_8000_Words.csv; sourceTree = "<group>"; };
 		B4340CB82AC4155600D0FBFA /* HttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
 		B4340CB92AC4155600D0FBFA /* HttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
 		B4340CBC2AC4176300D0FBFA /* AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
@@ -141,6 +143,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B426918B2AD4EA9B00FB614A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B426918C2AD4EAA200FB614A /* cvs */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		B426918C2AD4EAA200FB614A /* cvs */ = {
+			isa = PBXGroup;
+			children = (
+				B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */,
+			);
+			path = cvs;
+			sourceTree = "<group>";
+		};
 		B4340CB72AC4154300D0FBFA /* HttpService */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +209,7 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B426918B2AD4EA9B00FB614A /* resources */,
 				B4E50E192AD2A529009BEE44 /* RouteUtil */,
 				B4E50E052AD24D98009BEE44 /* VCS */,
 				B4ADA3CB2AD14543007E68F7 /* QDSafeString */,
@@ -374,6 +393,7 @@
 				B481D9A52A569D740027850F /* LaunchScreen.storyboard in Resources */,
 				B481D9A22A569D740027850F /* Assets.xcassets in Resources */,
 				B481D9A02A569D6F0027850F /* Main.storyboard in Resources */,
+				B426918E2AD4EAB800FB614A /* GRE_8000_Words.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

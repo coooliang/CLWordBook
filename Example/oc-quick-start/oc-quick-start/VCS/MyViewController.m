@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.blueColor;
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"GRE_8000_Words" ofType:@"csv"];
+    NSError *error = nil;
+    NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    
+    NSArray *arr = [fileContents componentsSeparatedByString:@"\r\n"];
+    NSLog(@"arr = %@",arr);
 }
 
 
