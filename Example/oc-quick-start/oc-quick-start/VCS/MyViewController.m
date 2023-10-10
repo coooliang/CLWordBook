@@ -23,7 +23,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"Middle_School" ofType:@"csv"];
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"Major48" ofType:@"csv"];
     NSError *error = nil;
     NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     NSArray *arr = [fileContents componentsSeparatedByString:@"\n"];
@@ -32,7 +32,10 @@
             if(line && line.length > 1){
                 NSArray *ws = [line componentsSeparatedByString:@","];
                 if(ws.count == 3){
-                    
+                    NSString *word = ws.firstObject;
+                    if([word containsString:@"("] ||[word containsString:@"（"] || [word containsString:@"，"]){
+                        NSLog(@"word = %@",word);
+                    }
                 }else{
                     NSLog(@"error = %@",ws);
                 }

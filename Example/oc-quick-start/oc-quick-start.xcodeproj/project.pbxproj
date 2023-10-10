@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B426918E2AD4EAB800FB614A /* GRE_8000_Words.csv in Resources */ = {isa = PBXBuildFile; fileRef = B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */; };
 		B42691902AD528DE00FB614A /* Middle_School.csv in Resources */ = {isa = PBXBuildFile; fileRef = B426918F2AD528DE00FB614A /* Middle_School.csv */; };
+		B42691922AD531C600FB614A /* Major48.csv in Resources */ = {isa = PBXBuildFile; fileRef = B42691912AD531C600FB614A /* Major48.csv */; };
 		B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CB92AC4155600D0FBFA /* HttpService.m */; };
 		B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CBD2AC4176300D0FBFA /* AppService.m */; };
 		B4340CC22AC41AEA00D0FBFA /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = B4340CC02AC41AEA00D0FBFA /* LYLUnicode.m */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRE_8000_Words.csv; sourceTree = "<group>"; };
 		B426918F2AD528DE00FB614A /* Middle_School.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Middle_School.csv; sourceTree = "<group>"; };
+		B42691912AD531C600FB614A /* Major48.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Major48.csv; sourceTree = "<group>"; };
 		B4340CB82AC4155600D0FBFA /* HttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
 		B4340CB92AC4155600D0FBFA /* HttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
 		B4340CBC2AC4176300D0FBFA /* AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		B426918C2AD4EAA200FB614A /* cvs */ = {
 			isa = PBXGroup;
 			children = (
+				B42691912AD531C600FB614A /* Major48.csv */,
 				B426918D2AD4EAB800FB614A /* GRE_8000_Words.csv */,
 				B426918F2AD528DE00FB614A /* Middle_School.csv */,
 			);
@@ -397,6 +400,7 @@
 				B42691902AD528DE00FB614A /* Middle_School.csv in Resources */,
 				B481D9A22A569D740027850F /* Assets.xcassets in Resources */,
 				B481D9A02A569D6F0027850F /* Main.storyboard in Resources */,
+				B42691922AD531C600FB614A /* Major48.csv in Resources */,
 				B426918E2AD4EAB800FB614A /* GRE_8000_Words.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
