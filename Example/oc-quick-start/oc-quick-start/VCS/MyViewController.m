@@ -33,7 +33,7 @@
                 NSArray *ws = [line componentsSeparatedByString:@","];
                 if(ws.count == 3){
                     NSString *word = ws.firstObject;
-                    if([word containsString:@"("] ||[word containsString:@"（"] || [word containsString:@"，"]){
+                    if([word containsString:@"("] ||[word containsString:@"（"] || [word containsString:@"，"] || [word containsString:@"-"]){
                         NSLog(@"word = %@",word);
                     }
                 }else{
