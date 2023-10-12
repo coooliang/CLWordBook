@@ -28,6 +28,7 @@
 		B4E50E172AD28EF9009BEE44 /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E132AD28EF9009BEE44 /* JKDBModel.m */; };
 		B4E50E182AD28EFA009BEE44 /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E142AD28EF9009BEE44 /* JKDBHelper.m */; };
 		B4E50E1C2AD2A543009BEE44 /* RouteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E1B2AD2A543009BEE44 /* RouteUtil.m */; };
+		B4EE6E292AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EE6E282AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m */; };
 		B4FC88EB2AC51BBF002BF973 /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E42AC51BBF002BF973 /* libbase.a */; };
 		B4FC88EC2AC51BBF002BF973 /* libonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E72AC51BBF002BF973 /* libonline.a */; };
 		B4FC88ED2AC51BBF002BF973 /* libspeechtransonline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FC88E92AC51BBF002BF973 /* libspeechtransonline.a */; };
@@ -81,6 +82,8 @@
 		B4E50E162AD28EF9009BEE44 /* JKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBHelper.h; sourceTree = "<group>"; };
 		B4E50E1A2AD2A543009BEE44 /* RouteUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteUtil.h; sourceTree = "<group>"; };
 		B4E50E1B2AD2A543009BEE44 /* RouteUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteUtil.m; sourceTree = "<group>"; };
+		B4EE6E272AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSearchWordTableViewCell.h; sourceTree = "<group>"; };
+		B4EE6E282AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSearchWordTableViewCell.m; sourceTree = "<group>"; };
 		B4FC88E42AC51BBF002BF973 /* libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbase.a; sourceTree = "<group>"; };
 		B4FC88E52AC51BBF002BF973 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		B4FC88E72AC51BBF002BF973 /* libonline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonline.a; sourceTree = "<group>"; };
@@ -147,9 +150,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B424A68C2AD673E0002B0152 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		B426918B2AD4EA9B00FB614A /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				B424A68C2AD673E0002B0152 /* mp3 */,
 				B426918C2AD4EAA200FB614A /* cvs */,
 			);
 			path = resources;
@@ -215,6 +226,7 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B4EE6E262AD79B1500DC3D17 /* Views */,
 				B426918B2AD4EA9B00FB614A /* resources */,
 				B4E50E192AD2A529009BEE44 /* RouteUtil */,
 				B4E50E052AD24D98009BEE44 /* VCS */,
@@ -297,6 +309,15 @@
 				B4E50E1B2AD2A543009BEE44 /* RouteUtil.m */,
 			);
 			path = RouteUtil;
+			sourceTree = "<group>";
+		};
+		B4EE6E262AD79B1500DC3D17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4EE6E272AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.h */,
+				B4EE6E282AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B4FC88E12AC51AA1002BF973 /* Libs */ = {
@@ -458,6 +479,7 @@
 				B4E50E0E2AD2507A009BEE44 /* BaseViewController.m in Sources */,
 				B4E50E182AD28EFA009BEE44 /* JKDBHelper.m in Sources */,
 				B4E50E1C2AD2A543009BEE44 /* RouteUtil.m in Sources */,
+				B4EE6E292AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m in Sources */,
 				B481D99D2A569D6F0027850F /* ViewController.m in Sources */,
 				B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */,
 				B4E50E172AD28EF9009BEE44 /* JKDBModel.m in Sources */,

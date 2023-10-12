@@ -7,8 +7,9 @@
 #import "FirstViewController.h"
 #import <UIColor+YYAdd.h>
 #import "RouteUtil.h"
+#import "HomeSearchWordTableViewCell.h"
 
-@interface FirstViewController ()<UITextFieldDelegate>
+@interface FirstViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -20,6 +21,8 @@
     UIColor *_backgroundColor;
     
     UITableView *_tableView;
+    
+    NSMutableArray *_datas;
 }
 
 #pragma mark - live cycle
@@ -39,6 +42,8 @@
 - (void)createTableView {
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_searchBar.frame), WIDTH, HEIGHT-CGRectGetMaxY(_searchBar.frame)-[RouteUtil getRootTabBarController].tabBar.frame.size.height)];
     _tableView.backgroundColor = UIColor.redColor;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
     [self.view addSubview:_tableView];
 }
 
@@ -69,7 +74,25 @@
     [_searchTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
 
+#pragma mark -
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HomeSearchWordTableViewCell *cell = [[HomeSearchWordTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(HomeSearchWordTableViewCell.class)];
+    return cell;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
+
 #pragma mark - UITextFieldDelegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+}
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     [theTextField resignFirstResponder];
     return YES;
