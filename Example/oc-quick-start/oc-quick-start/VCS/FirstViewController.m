@@ -31,6 +31,8 @@
     _backgroundColor = [UIColor colorWithHexString:@"e6e7fc"];
     self.view.backgroundColor = _backgroundColor;
     [self createTextField];
+    
+    _datas = [NSMutableArray arrayWithArray:@[@"apple",@""]];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -42,6 +44,7 @@
 - (void)createTableView {
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_searchBar.frame), WIDTH, HEIGHT-CGRectGetMaxY(_searchBar.frame)-[RouteUtil getRootTabBarController].tabBar.frame.size.height)];
     _tableView.backgroundColor = UIColor.redColor;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -85,6 +88,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
 #pragma mark - UITextFieldDelegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -97,7 +103,6 @@
     [theTextField resignFirstResponder];
     return YES;
 }
-
 - (void)textFieldDidChange:(UITextField *)textField {
     if(textField.markedTextRange == nil){
         NSLog(@"textField text = %@",textField.text);

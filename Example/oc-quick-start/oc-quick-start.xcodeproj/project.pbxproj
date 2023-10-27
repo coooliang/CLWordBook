@@ -19,6 +19,7 @@
 		B481D9A22A569D740027850F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B481D9A12A569D740027850F /* Assets.xcassets */; };
 		B481D9A52A569D740027850F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B481D9A32A569D740027850F /* LaunchScreen.storyboard */; };
 		B481D9A82A569D740027850F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B481D9A72A569D740027850F /* main.m */; };
+		B4895B6D2AD8D236008A4AD9 /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4895B6C2AD8D236008A4AD9 /* WordModel.m */; };
 		B4ADA3C92AD13E6F007E68F7 /* WordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3C82AD13E6F007E68F7 /* WordStore.m */; };
 		B4ADA3CE2AD14543007E68F7 /* QDSafeString.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADA3CD2AD14543007E68F7 /* QDSafeString.m */; };
 		B4E50E082AD24DB7009BEE44 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E50E072AD24DB7009BEE44 /* FirstViewController.m */; };
@@ -63,6 +64,8 @@
 		B481D9A42A569D740027850F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B481D9A62A569D740027850F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B481D9A72A569D740027850F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4895B6B2AD8D236008A4AD9 /* WordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
+		B4895B6C2AD8D236008A4AD9 /* WordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordModel.m; sourceTree = "<group>"; };
 		B49921872A79FE4F00181526 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B4ADA3C72AD13E6F007E68F7 /* WordStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordStore.h; sourceTree = "<group>"; };
 		B4ADA3C82AD13E6F007E68F7 /* WordStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordStore.m; sourceTree = "<group>"; };
@@ -226,6 +229,7 @@
 		B481D9942A569D6F0027850F /* oc-quick-start */ = {
 			isa = PBXGroup;
 			children = (
+				B4895B6A2AD8D221008A4AD9 /* Model */,
 				B4EE6E262AD79B1500DC3D17 /* Views */,
 				B426918B2AD4EA9B00FB614A /* resources */,
 				B4E50E192AD2A529009BEE44 /* RouteUtil */,
@@ -249,6 +253,15 @@
 				B49921872A79FE4F00181526 /* PrefixHeader.pch */,
 			);
 			path = "oc-quick-start";
+			sourceTree = "<group>";
+		};
+		B4895B6A2AD8D221008A4AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4895B6B2AD8D236008A4AD9 /* WordModel.h */,
+				B4895B6C2AD8D236008A4AD9 /* WordModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B4ADA3C62AD13E0B007E68F7 /* WordStore */ = {
@@ -482,6 +495,7 @@
 				B4EE6E292AD79B4B00DC3D17 /* HomeSearchWordTableViewCell.m in Sources */,
 				B481D99D2A569D6F0027850F /* ViewController.m in Sources */,
 				B4340CBE2AC4176300D0FBFA /* AppService.m in Sources */,
+				B4895B6D2AD8D236008A4AD9 /* WordModel.m in Sources */,
 				B4E50E172AD28EF9009BEE44 /* JKDBModel.m in Sources */,
 				B4340CBA2AC4155600D0FBFA /* HttpService.m in Sources */,
 				B481D9972A569D6F0027850F /* AppDelegate.m in Sources */,

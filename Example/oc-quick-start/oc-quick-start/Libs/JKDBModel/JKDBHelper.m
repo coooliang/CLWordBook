@@ -21,8 +21,7 @@
 
 static JKDBHelper *_instance = nil;
 
-+ (instancetype)shareInstance
-{
++ (instancetype)shareInstance {
     static dispatch_once_t onceToken ;
     dispatch_once(&onceToken, ^{
         _instance = [[super allocWithZone:NULL] init] ;
@@ -31,8 +30,7 @@ static JKDBHelper *_instance = nil;
     return _instance;
 }
 
-+ (NSString *)dbPathWithDirectoryName:(NSString *)directoryName
-{
++ (NSString *)dbPathWithDirectoryName:(NSString *)directoryName {
     NSString *docsdir = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSFileManager *filemanage = [NSFileManager defaultManager];
     if (directoryName == nil || directoryName.length == 0) {
@@ -46,24 +44,22 @@ static JKDBHelper *_instance = nil;
         [filemanage createDirectoryAtPath:docsdir withIntermediateDirectories:YES attributes:nil error:nil];
     }
     NSString *dbpath = [docsdir stringByAppendingPathComponent:@"jkdb.sqlite"];
+    NSLog(@"dbpath = %@",dbpath);
     return dbpath;
 }
 
-+ (NSString *)dbPath
-{
++ (NSString *)dbPath {
     return [self dbPathWithDirectoryName:nil];
 }
 
-- (FMDatabaseQueue *)dbQueue
-{
+- (FMDatabaseQueue *)dbQueue {
     if (_dbQueue == nil) {
         _dbQueue = [[FMDatabaseQueue alloc] initWithPath:[self.class dbPath]];
     }
     return _dbQueue;
 }
 
-- (BOOL)changeDBWithDirectoryName:(NSString *)directoryName
-{
+- (BOOL)changeDBWithDirectoryName:(NSString *)directoryName {
     if (_instance.dbQueue) {
         _instance.dbQueue = nil;
     }
@@ -89,29 +85,24 @@ static JKDBHelper *_instance = nil;
     return YES;
 }
 
-+ (id)allocWithZone:(struct _NSZone *)zone
-{
++ (id)allocWithZone:(struct _NSZone *)zone {
     return [JKDBHelper shareInstance];
 }
 
-- (id)copyWithZone:(struct _NSZone *)zone
-{
+- (id)copyWithZone:(struct _NSZone *)zone {
     return [JKDBHelper shareInstance];
 }
 
 #if ! __has_feature(objc_arc)
-- (oneway void)release
-{
+- (oneway void)release {
     
 }
 
-- (id)autorelease
-{
+- (id)autorelease {
     return _instance;
 }
 
-- (NSUInteger)retainCount
-{
+- (NSUInteger)retainCount {
     return 1;
 }
 #endif
